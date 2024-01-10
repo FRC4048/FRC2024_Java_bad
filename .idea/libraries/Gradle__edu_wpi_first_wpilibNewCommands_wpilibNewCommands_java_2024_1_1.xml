@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: edu.wpi.first.wpilibNewCommands:wpilibNewCommands-java:2024.1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/wpilib/2024/maven/edu/wpi/first/wpilibNewCommands/wpilibNewCommands-java/2024.1.1/wpilibNewCommands-java-2024.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/wpilib/2024/maven/edu/wpi/first/wpilibNewCommands/wpilibNewCommands-java/2024.1.1/wpilibNewCommands-java-2024.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
