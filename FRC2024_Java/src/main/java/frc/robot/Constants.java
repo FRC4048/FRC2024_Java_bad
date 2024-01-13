@@ -15,5 +15,9 @@ package frc.robot;
 public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
-  }
+}
+    public static final double BACK_RIGHT_ABS_ENCODER_ZERO = 218.76;
+    public static final double FRONT_LEFT_ABS_ENCODER_ZERO = 9.0;
+    public static final double BACK_LEFT_ABS_ENCODER_ZERO = 351.3;
+    public static final double FRONT_RIGHT_ABS_ENCODER_ZERO = 299.13;
 }
