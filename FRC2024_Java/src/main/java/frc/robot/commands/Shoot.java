@@ -1,0 +1,33 @@
+package frc.robot.commands;
+
+import edu.wpi.first.wpilibj2.command.Command;
+import frc.robot.subsystems.Shooter;
+import edu.wpi.first.wpilibj.Timer;
+
+public class Shoot extends Command {
+    private Shooter shooter;
+    Timer timer = new Timer();
+
+    @Override
+    public void execute () {
+        timer.reset();
+        timer.start();
+    }
+
+    @Override
+    public void initialize() {
+        shooter.spinMotor(0.75);
+    }
+
+    @Override public boolean isFinished() {
+        if ((shooter.getShooterSensorActivated() == true) && (timer.advanceIfElapsed(1))) {
+            shooter.stopMotor();
+            return true;
+        }
+
+        else {
+            return false;
+        }
+    }
+    
+}
