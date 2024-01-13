@@ -4,7 +4,7 @@ import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.Shooter;
 import edu.wpi.first.wpilibj.Timer;
 
-public class Shoot extends Command {
+public class ShootTest extends Command {
 
     private Shooter shooter;
     Timer timer = new Timer();
@@ -24,8 +24,8 @@ public class Shoot extends Command {
 
     @Override 
     public boolean isFinished() {
-        //Check if sensor has been activated and it has been 1 second
-        if ((shooter.getShooterSensorActivated() == true) && (timer.advanceIfElapsed(1))) {
+        //Check if it has been 2 seconds
+        if (timer.advanceIfElapsed(2)) {
             shooter.stopMotor();
             return true;
         }

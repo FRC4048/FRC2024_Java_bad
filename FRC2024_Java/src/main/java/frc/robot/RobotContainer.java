@@ -7,6 +7,7 @@ package frc.robot;
 import frc.robot.Constants.OperatorConstants;
 import frc.robot.commands.Autos;
 import frc.robot.commands.Shoot;
+import frc.robot.commands.ShootTest;
 import frc.robot.subsystems.ExampleSubsystem;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj2.command.Command;
@@ -43,7 +44,7 @@ public class RobotContainer {
   private void configureBindings() {
     
     //Create Shoot Button (A)
-    m_driverController.button(XboxController.Button.kA.value).onTrue(new Shoot());
+    m_driverController.button(XboxController.Button.kA.value).onTrue(new ShootTest());
 
   }
 
