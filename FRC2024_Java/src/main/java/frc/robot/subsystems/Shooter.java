@@ -21,16 +21,19 @@ public class Shooter extends SubsystemBase {
     shooterSensor = new DigitalInput(Constants.SHOOTER_SENSOR_ID);
   }
 
+  //Method to spin shooter motors
   public void spinMotor(double speed) {
     shooterWheel1.set(speed);
     shooterWheel2.set(speed);
   }
 
+  //Method to stop shooter motors
   public void stopMotor() {
     shooterWheel1.stopMotor();
     shooterWheel2.stopMotor();
   }
 
+  //Get the status of the shooter sensor
   public boolean getShooterSensorActivated() {
     return shooterSensor.get();
   }
