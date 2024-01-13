@@ -25,7 +25,7 @@ public class ShootTest extends Command {
 
     @Override 
     public boolean isFinished() {
-        //Check if it has been 2 seconds
+        //Check if it has been 2 seconds, then stop motors
         if (timer.advanceIfElapsed(2)) {
             shooter.stopMotor();
             return true;

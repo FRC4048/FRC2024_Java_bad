@@ -25,7 +25,7 @@ public class Shoot extends Command {
 
     @Override 
     public boolean isFinished() {
-        //Check if sensor has been activated and it has been 1 second
+        //Check if sensor has been activated, and it has been one second, then stop motors
         if ((shooter.getShooterSensorActivated() == true) && (timer.advanceIfElapsed(1))) {
             shooter.stopMotor();
             return true;
