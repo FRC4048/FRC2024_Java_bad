@@ -20,6 +20,8 @@ public final class Constants {
 
   public static final int SHOOTER_SENSOR_ID = 0;
 
+  public static final double SHOOTER_MOTOR_SPEED = 0.75;
+
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
   }

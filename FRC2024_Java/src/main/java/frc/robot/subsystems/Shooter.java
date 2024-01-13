@@ -22,7 +22,7 @@ public class Shooter extends SubsystemBase {
   }
 
   //Method to spin shooter motors
-  public void spinMotor(double speed) {
+  public void spinMotors(double speed) {
     shooterWheel1.set(speed);
     shooterWheel2.set(speed);
   }
