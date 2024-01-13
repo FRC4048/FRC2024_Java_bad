@@ -6,7 +6,6 @@ package frc.robot;
 
 import frc.robot.Constants.OperatorConstants;
 import frc.robot.commands.Autos;
-import frc.robot.commands.Shoot;
 import frc.robot.commands.ShootTest;
 import frc.robot.subsystems.ExampleSubsystem;
 import edu.wpi.first.wpilibj.XboxController;
