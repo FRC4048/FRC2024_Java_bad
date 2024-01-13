@@ -8,6 +8,7 @@ import com.revrobotics.SparkLimitSwitch.Type;
 
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.Constants;
+import frc.robot.utils.SmartShuffleboard;
 
 public class Ramp extends SubsystemBase {
     private CANSparkMax neoMotor;
@@ -39,18 +40,17 @@ public class Ramp extends SubsystemBase {
         pidController.setSmartMotionMaxAccel(1500.0, 0);
         pidController.setSmartMotionAllowedClosedLoopError(0.0, 0);
 
-        //SmartShuffleboard.put("Ramp", "PID P", pidP);
-        //SmartShuffleboard.put("Ramp", "PID I", pidI);
-        //SmartShuffleboard.put("Ramp", "PID D", pidD);
+        SmartShuffleboard.put("Ramp", "PID P", pidP);
+        SmartShuffleboard.put("Ramp", "PID I", pidI);
+        SmartShuffleboard.put("Ramp", "PID D", pidD);
     }
         public void periodic() {
 
-            //SmartShuffleboard.put("Arm", "P Gain", pidController.getP());
-            //SmartShuffleboard.put("Arm", "I Gain", pidController.getI());
-            //SmartShuffleboard.put("Arm", "D Gain", pidController.getD());
-            //SmartShuffleboard.put("Arm", "FF Gain", pidController.getFF());
-            //SmartShuffleboard.put("Arm", "Encoder Value", encoder.getPosition());
-            //SmartShuffleboard.put("Arm", "Desired pos", armpos);
+            SmartShuffleboard.put("Arm", "P Gain", pidController.getP());
+            SmartShuffleboard.put("Arm", "I Gain", pidController.getI());
+            SmartShuffleboard.put("Arm", "D Gain", pidController.getD());
+            SmartShuffleboard.put("Arm", "FF Gain", pidController.getFF());
+            SmartShuffleboard.put("Arm", "Encoder Value", encoder.getPosition());
         
     }
  }
