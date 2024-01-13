@@ -16,9 +16,9 @@ public class Shooter extends SubsystemBase {
   private final DigitalInput shooterSensor;
 
   public Shooter() {
-    shooterWheel1 = new PWMSparkMax(Constants.SHOOTER_MOTOR_ID_1);
-    shooterWheel2 = new PWMSparkMax(Constants.SHOOTER_MOTOR_ID_2);
-    shooterSensor = new DigitalInput(Constants.SHOOTER_SENSOR_ID);
+    this.shooterWheel1 = new PWMSparkMax(Constants.SHOOTER_MOTOR_ID_1);
+    this.shooterWheel2 = new PWMSparkMax(Constants.SHOOTER_MOTOR_ID_2);
+    this.shooterSensor = new DigitalInput(Constants.SHOOTER_SENSOR_ID);
   }
 
   //Spin shooter motors
